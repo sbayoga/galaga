@@ -184,15 +184,15 @@
     }
 
     private createMatrix(rows, columns, input): any {
-      let mamatrix = [];
+      let matrix = [];
       for (var i = 0; i < rows; i++) {
-        mamatrix[i] = [];
+        matrix[i] = [];
         for (var j = 0; j < columns; j++) {
-          mamatrix[i][j] = this.fillMatrixCell(i, j, input);
+          matrix[i][j] = this.fillMatrixCell(i, j, input);
         }
       }
-      mamatrix = this.fillWaterBetweenLands(mamatrix);
-      return mamatrix;
+      matrix = this.fillWaterBetweenLands(matrix);
+      return matrix;
     }
 
     private fillWaterBetweenLands(matrix): any {
